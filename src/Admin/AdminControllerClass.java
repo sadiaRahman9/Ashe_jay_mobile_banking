@@ -31,6 +31,7 @@ public class AdminControllerClass  {
 
     static String generatedID;
     static String staffPass;
+    static String staffid;
 
     public void addStaff(ActionEvent e) throws IOException {
         if (!staffNameField.getText().isEmpty() && !staffPassField.getText().isEmpty()){
@@ -43,6 +44,7 @@ public class AdminControllerClass  {
             String rcv =  in.readUTF();
             System.out.println(rcv);
             System.out.println("bye");
+            System.out.println("return to admin login");
             generatedID = rcv;
             staffPass = staffPassField.getText();
             Parent root = FXMLLoader.load(getClass().getResource("afterSuccessAccountCreate.fxml"));
