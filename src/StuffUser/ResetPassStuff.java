@@ -28,6 +28,8 @@ public class ResetPassStuff implements Initializable {
     TextField newPassfield;
     @FXML
     TextField newPassfield2;
+     @FXML
+    TextField newPassfield3;
     @FXML
     Button reset;
 
@@ -69,8 +71,8 @@ public class ResetPassStuff implements Initializable {
             }
             else {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
-                alert.setTitle("Password mismatch");
-                alert.setHeaderText("Password mismatch !");
+                alert.setTitle("Password does not match");
+                alert.setHeaderText("Password does not match !");
                 alert.setContentText("Please give the same password to both of the field info and try again ");
                 alert.showAndWait();
                 newPassfield.setText("");
