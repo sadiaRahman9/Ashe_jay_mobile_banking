@@ -25,6 +25,8 @@ public class StaffLogin extends Application implements Initializable {
     static  int uniPORT = 8899;
     static String staffUniId;
     static String staffUniPass;
+
+    static String staffUnilog;
     @FXML
     TextField id;
     @FXML
@@ -59,7 +61,7 @@ public class StaffLogin extends Application implements Initializable {
             else {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("Warning");
-                alert.setHeaderText("Something went wrong !");
+                alert.setHeaderText("Something went wrong!");
                 alert.setContentText("Please check the info and try again ");
                 alert.showAndWait();
             }
