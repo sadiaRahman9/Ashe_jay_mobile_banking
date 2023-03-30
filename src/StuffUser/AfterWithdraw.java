@@ -19,6 +19,10 @@ public class AfterWithdraw implements Initializable {
     @FXML
     private Button withdrawAgainButton;
 
+    @FXML
+    private Button waButton;
+
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
