@@ -39,6 +39,8 @@ public class CreateAccount implements Initializable {
     RadioButton male;
     @FXML
     RadioButton female;
+    @FXML
+    RadioButton others;
     String gender;
 
 
@@ -55,6 +57,10 @@ public class CreateAccount implements Initializable {
         else if (female.isSelected()){
             gender = "Female";
             System.out.println("female");
+        }
+        else if (others.isSelected()){
+            gender = "Others";
+            System.out.println("others");
         }
         String name =  first_name.getText()+" "+last_name.getText();
         System.out.println(name);

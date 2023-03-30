@@ -24,6 +24,9 @@ public class AfterSuccessAccountCreate implements Initializable {
     @FXML
     Label rcvPassLabel;
 
+    @FXML
+    Label rcvlogLabel;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         rcvIDLabel.setText(generatedID);

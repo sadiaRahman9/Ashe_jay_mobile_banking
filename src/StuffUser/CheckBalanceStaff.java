@@ -27,6 +27,7 @@ public class CheckBalanceStaff implements Initializable {
 
     String  myID = staffUniId;
     String myPass = staffUniPass;
+    String myLog = staffUniLog;
     String uniIP = StaffLogin.uniIP;
     int uniPORT = StaffLogin.uniPORT;
     @Override
@@ -41,7 +42,7 @@ public class CheckBalanceStaff implements Initializable {
     public void back(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("staffUI.fxml"));
         Stage stage =  (Stage) ((Node) e.getSource()).getScene().getWindow();
-        stage.setTitle("Stuff UI");
+        stage.setTitle("Stuff");
         stage.setScene(new Scene(root));
         stage.show();
     }
