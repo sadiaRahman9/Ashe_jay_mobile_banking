@@ -33,6 +33,8 @@ public class Withdraw implements Initializable {
     @FXML
     private Button withdrawButton;
 
+    @FXML
+    private Button waButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
