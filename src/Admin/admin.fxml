@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="295.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminControllerClass">
+<AnchorPane prefHeight="295.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminControllerClass">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="295.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="286.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#8ac1ff" />
-                  <Stop color="#e1e1e1" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <Button layoutX="66.0" layoutY="180.0" mnemonicParsing="false" onAction="#goToAddStaff" prefHeight="56.0" prefWidth="165.0" style="-fx-background-color: f9fd50;" text="Create Agent Account">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#182736" height="447.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="616.0" />
+      <Button layoutX="182.0" layoutY="231.0" mnemonicParsing="false" onAction="#goToAddStaff" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: f9fd50;" text="Create Agent Account">
          <font>
-            <Font name="System Bold" size="11.0" />
+            <Font name="System Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="67.0" layoutY="111.0" mnemonicParsing="false" onAction="#goToDeposit" prefHeight="56.0" prefWidth="165.0" style="-fx-background-color: fa4252;" text="Deposite to Agent Account" textFill="WHITE">
+      <Button layoutX="183.0" layoutY="146.0" mnemonicParsing="false" onAction="#goToDeposit" prefHeight="70.0" prefWidth="250.0" style="-fx-background-color: #0a8204;" text="Deposite to Agent Account" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="11.0" />
+            <Font name="System Bold" size="14.0" />
          </font></Button>
-      <Label layoutX="142.0" layoutY="267.0" prefHeight="16.0" prefWidth="139.0" text="Ashe Jay Mobile Banking">
+      <Label alignment="CENTER" layoutX="420.0" layoutY="408.0" prefHeight="16.0" prefWidth="166.0" text="Ashe Jay Mobile Banking" textFill="WHITE">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <Label layoutX="82.0" layoutY="33.0" text="Admin Panel">
+      <Label alignment="CENTER" layoutX="82.0" layoutY="33.0" prefHeight="44.0" prefWidth="434.0" text="Admin Panel" textFill="WHITE">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="Arial Bold" size="32.0" />
          </font>
       </Label>
    </children>
