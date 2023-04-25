@@ -1,36 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="295.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminControllerClass">
+<AnchorPane prefHeight="295.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminControllerClass">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="295.0" stroke="TRANSPARENT" strokeType="INSIDE" width="286.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#59a3ff" />
-                  <Stop color="WHITE" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <TextField fx:id="staffNameField" layoutX="71.0" layoutY="99.0" prefHeight="31.0" prefWidth="157.0" promptText="Agent Name" />
-      <Button layoutX="130.0" layoutY="199.0" mnemonicParsing="false" onAction="#addStaff" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: ffdc34;" text="Create account" textFill="#464646" />
-      <TextField fx:id="staffPassField" layoutX="71.0" layoutY="140.0" prefHeight="31.0" prefWidth="157.0" promptText="Password" />
-      <Button layoutX="71.0" layoutY="199.0" mnemonicParsing="false" onAction="#goToAdmin" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: fa4252;" text="Back" textFill="WHITE" />
-      <Label layoutX="53.0" layoutY="45.0" text="Create Agent Account">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#182736" height="447.0" stroke="TRANSPARENT" strokeType="INSIDE" width="616.0" />
+      <TextField fx:id="staffNameField" layoutX="158.0" layoutY="156.0" prefHeight="40.0" prefWidth="300.0" promptText="Agent Name" />
+      <Button layoutX="251.0" layoutY="267.0" mnemonicParsing="false" onAction="#addStaff" prefHeight="40.0" prefWidth="114.0" style="-fx-background-color: #0a8204;" text="Create account" textFill="WHITE">
          <font>
-            <Font name="Arial Bold" size="20.0" />
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="staffPassField" layoutX="158.0" layoutY="210.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
+      <Button layoutX="24.0" layoutY="51.0" mnemonicParsing="false" onAction="#goToAdmin" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #f8b400;" text="Back" textFill="#262626">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="69.0" layoutY="44.0" prefHeight="40.0" prefWidth="478.0" text="Create Agent Account" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
          </font>
       </Label>
-      <Label layoutX="110.0" layoutY="263.0" prefHeight="17.0" prefWidth="157.0" text="Ashe Jay Mobile Banking">
+      <Label layoutX="444.0" layoutY="415.0" prefHeight="17.0" prefWidth="157.0" text="Ashe Jay Mobile Banking" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
